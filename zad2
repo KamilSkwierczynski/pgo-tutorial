@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.time.*;
+
+public class Main{
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double cenabiletu = 40;
+
+    System.out.println("Miasto: ");
+    String miasto = scanner.next();
+
+    System.out.println("Wiek: ");
+    int wiek = scanner.nextInt();
+
+    String data = LocalDate.now().getDayOfWeek().name();
+
+    if (miasto.equals("Warszawa")) {
+        cenabiletu *= 0.9;
+    }
+    if (wiek < 10) {
+        cenabiletu = 0.0;
+    } else if (wiek >= 10 && wiek <= 18) {
+        cenabiletu *= 0.5 ;
+    }
+    if (data.equals("Thursday")){
+    cenabiletu = 0;
+    }
+    double znizka = ((40 - cenabiletu) / 40) * 100;
+    System.out.println("Miasto: " + miasto + ", wiek: " + wiek + ", Dzień: " + data);
+    System.out.println("Zniżka: " + znizka);
+    }
+}
