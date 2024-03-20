@@ -1,3 +1,1 @@
-<Kamil> <Skwierczyński>
-<13>
-<s30740>
+<Kamil Skwierczyński GR 13 s30740>
