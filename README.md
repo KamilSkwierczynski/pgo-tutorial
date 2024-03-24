@@ -1,1 +1,3 @@
-<Kamil Skwierczyński GR 13 s30740>
+Kamil Skwierczyński
+GR 13c
+s30740
